@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            body { 
+                font-family: 'Open Sans', sans-serif;
+                background: linear-gradient(#4ca1af,#c4e0e5);
+            }
+            .login { 
+                color: white;
+                font-size: 18px;
+                position: absolute;
+                top: 22%;
+                text-align: center;
+                left: 37%;
+                width: 26%;
+            }
+            .btn-primary
+            { 
+                background-color: #4a77d4;
+            }
+            .login h1 
+            { 
+                color: #fff; 
+                text-shadow: 0 0 10px rgba(0,0,0,0.3); 
+                letter-spacing: 1px; 
+                text-align: center; 
+            }
+            input { 
+                width: 100%; 
+                margin-bottom: 10px; 
+                background: rgba(0,0,0,0.3);
+                border: none;
+                outline: none;
+                padding: 10px;
+                font-size: 13px;
+                color: #fff;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+                border: 1px solid rgba(0,0,0,0.3);
+                border-radius: 4px;
+            }
+            .label{ color: black; }
+            ::placeholder{ color: white };  
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <h1>Welcome To Online Results Portal</h1>
+            <form action="#" method="post">
+                <input type="text" name="teacher_name" class="label" placeholder="Teacher Name">
+                <input type="text" name="teacher_password" class="label" placeholder="Teacher Password">        
+                <input type="submit" class="btn-primary" value="Log In">
+                If New <a href="register.html" style="text-decoration: none;">Register Here</a>
+            </form>
+        </div>
+    </body> 
+</html>

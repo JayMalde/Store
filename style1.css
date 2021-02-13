@@ -1,0 +1,42 @@
+    body { 
+            width: 100%;
+            height: 100%;
+            font-family: 'Open Sans', sans-serif;
+            background: #092756;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 1.2px;
+            background: linear-gradient(#4ca1af,#c4e0e5);
+            overflow: hidden;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container { 
+            position: absolute;
+            top: 30%;
+            left: 45%;
+            margin: -150px 0 0 -150px;
+            width: 400px;
+            height: 400px;
+        }
+        .btn-primary,input[type=submit]
+        { 
+            background-color: #4a77d4; 
+        }
+
+        textarea,input { 
+            width: 100%; 
+            margin-bottom: 10px; 
+            background: rgba(0,0,0,0.3);
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 13px;
+            color: #fff;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+            border: 1px solid rgba(0,0,0,0.3);
+            border-radius: 4px;
+        }
+        .label{ color: black; }
+        ::placeholder{ color: white };
