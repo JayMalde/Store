@@ -1,7 +1,12 @@
 <html>
 <head>
     <title>Login Page</title>
-    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+    	body{
+        	background: linear-gradient(#4ca1af,#c4e0e5);           
+    	}
+    </style>
 </head>
 <body>
 <?php

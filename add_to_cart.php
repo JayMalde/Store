@@ -15,8 +15,9 @@ $con = mysqli_connect("localhost","root","","store") or die("Database Connectivi
 try
 {
 	$query="insert into cart (user_id,product_id,quantity,price) values ($user_id,$product_id,$quantity,$price)";
+	$update_stock="update product set stock=stock-1 where product_id=$product_id";
 	echo "Query".$query;
-	if(mysqli_query($con,$query)){
+	if(mysqli_query($con,$query) && mysqli_query($con,$update_stock)){
 		header("location:show_product.php");
 	}else{
 		echo "<br>Not Able to save to cart".mysqli_error($con);

@@ -2,6 +2,7 @@
 <head>
     <title>Admin Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">*{margin: 0px;}</style>
 </head>
 <?php
 session_start();
@@ -28,9 +29,9 @@ else if(isset($_SESSION['user_id']) && $_SESSION['user_type']=="user"){
   <li class="dropdown">
     <a class="dropbtn">Add Entry</a>
     <div class="dropdown-content">
-      <a href="add_product.php">Product</a>
+      <a href="admin/add_product.php">Product</a>
       <a href="add_user.php">User</a>
-      <a href="add_category.php">Category</a>
+      <a href="admin/add_category.php">Category</a>
     </div>
   </li>
   <li><a href="logout.php">Logout</a></li>
@@ -38,7 +39,7 @@ else if(isset($_SESSION['user_id']) && $_SESSION['user_type']=="user"){
 </ul>
 <?php
 $page = $_REQUEST['page'] ?? "";
-if($page){ include 'all_'.$page.'.php'; }
-else{include 'all_products.php';}
+if($page){ include 'admin/all_'.$page.'.php'; }
+else{include 'admin/all_products.php';}
 ?>
 </body>
